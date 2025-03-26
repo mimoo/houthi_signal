@@ -34,7 +34,7 @@ export default function SignalGroupChat() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto h-screen flex flex-col bg-white border rounded-2xl shadow overflow-hidden">
+    <div className="max-w-2xl mx-auto h-screen flex flex-col bg-white  rounded-2xl  overflow-hidden ">
       {/* Header */}
       <div className="border-b px-4 py-3 font-semibold text-gray-800">
         Houthi PC small group
