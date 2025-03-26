@@ -7,12 +7,16 @@ import { Message } from "@/types/messages";
 import { Send } from "lucide-react";
 
 const nameColorMap: { [key: string]: string } = {
-  pink: "text-pink-500",
-  orange: "text-orange-500",
-  purple: "text-purple-600",
-  green: "text-green-700",
-  lime: "text-lime-600",
-  red: "text-red-600",
+  TG: "text-pink-500",
+  "JD Vance": "text-orange-800",
+  "John Ratcliffe": "text-blue-600",
+  "S M": "text-green-700",
+  "Scott B": "text-green-900",
+  "Pete Hegseth": "text-lime-600",
+  "Susie Wiles": "text-green-800",
+  Brian: "text-red-600",
+  MAR: "text-yellow-600",
+  "Michael Waltz": "text-blue-600",
 };
 
 export default function SignalGroupChat() {
@@ -57,7 +61,7 @@ export default function SignalGroupChat() {
               <div className="bg-gray-200 text-gray-900 rounded-2xl shadow p-3 max-w-md">
                 <p
                   className={`text-sm font-semibold mb-1 ${
-                    msg.color ? nameColorMap[msg.color] : ""
+                    nameColorMap[msg.sender]
                   }`}
                 >
                   {msg.sender}
